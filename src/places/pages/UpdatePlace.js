@@ -61,7 +61,7 @@ const UpdatePlace = () => {
     try {
       await sendRequest(
         `${process.env.REACT_APP_BACKEND_URL}/places/${placeId}`,
-        "PATCH",
+        "PUT",
         JSON.stringify({
           title: formState.inputs.title.value,
           description: formState.inputs.description.value,
